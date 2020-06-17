@@ -29,6 +29,7 @@ fn main() {
     // see: https://doc.rust-lang.org/book/ch05-01-defining-structs.html#using-tuple-structs-without-named-fields-to-create-different-types
     struct Structure(i32);
 
+    // https://doc.rust-lang.org/std/fmt/trait.Display.html#examples
     impl fmt::Display for Structure {
         fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
             write!(f, "({})", self.0)
