@@ -37,4 +37,7 @@ fn main() {
     }
 
     println!("Struct: {} ", Structure(3));
+
+    let pi = 3.141592;
+    println!("Pi is roughly {:.3}", pi);
 }
